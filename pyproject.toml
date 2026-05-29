@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "integration-practice"
+version = "0.1.0"
+description = "Демонстрационный проект для интеграции модулей, тестирования и инспекции кода."
+authors = ["integration-practice"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-q"
+python_files = "tests/test_*.py"
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
